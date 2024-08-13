@@ -1,0 +1,78 @@
+Aqui está uma lista com 25 projetos em Python orientado a objetos para alguém em nível intermediário. Esses projetos enfatizam o uso de classes, herança, encapsulamento, polimorfismo e outros princípios da programação orientada a objetos (POO).
+
+1. **Sistema de Gestão de Biblioteca**:
+   - Crie um sistema para gerenciar livros, autores e empréstimos em uma biblioteca, utilizando classes para representar cada entidade.
+
+2. **Jogo de Xadrez**:
+   - Desenvolva um jogo de xadrez completo com classes para peças, tabuleiro e regras, e implemente a lógica do jogo utilizando POO.
+
+3. **Sistema de Votação Eletrônica**:
+   - Construa um sistema de votação com classes para eleitores, candidatos e eleições, com funcionalidades como registro de votos e contagem.
+
+4. **Gerenciamento de Inventário**:
+   - Implemente um sistema de gerenciamento de inventário para uma loja, utilizando classes para representar produtos, categorias e fornecedores.
+
+5. **Sistema de Reserva de Hotel**:
+   - Desenvolva um sistema de reserva de quartos de hotel, com classes para representar clientes, quartos e reservas, incluindo funcionalidades de check-in e check-out.
+
+6. **Simulador de Banco**:
+   - Crie um simulador de banco com contas correntes e de poupança, implementando transações, transferências e taxas de juros.
+
+7. **Sistema de Atendimento ao Cliente**:
+   - Construa um sistema de suporte ao cliente, com classes para clientes, atendentes e tickets de suporte, incluindo funcionalidades de abertura e resolução de tickets.
+
+8. **Sistema de Gestão Escolar**:
+   - Implemente um sistema para gerenciar estudantes, professores, cursos e matrículas em uma escola, utilizando POO para organizar as entidades.
+
+9. **Simulador de Caixa Eletrônico (ATM)**:
+   - Desenvolva um simulador de ATM, com classes para contas bancárias, cartões e transações, incluindo funcionalidades de saque, depósito e consulta de saldo.
+
+10. **Editor de Texto Orientado a Objetos**:
+    - Crie um editor de texto básico com funcionalidades como abrir, editar, salvar e formatar texto, utilizando classes para documentos, fontes e estilos.
+
+11. **Simulador de Sistema de Trânsito**:
+    - Construa um simulador de trânsito, com classes para representar veículos, semáforos e estradas, simulando o movimento e a interação entre eles.
+
+12. **Sistema de Controle de Estoque com Loteamento**:
+    - Desenvolva um sistema de controle de estoque que gerencia lotes de produtos, incluindo entrada, saída e rastreamento de validade.
+
+13. **Aplicativo de Agenda Pessoal**:
+    - Implemente um aplicativo de agenda que permite gerenciar compromissos e eventos, utilizando classes para datas, eventos e lembretes.
+
+14. **Simulador de Jogo de Cartas (Ex: Poker, Blackjack)**:
+    - Crie um simulador para um jogo de cartas como Poker ou Blackjack, com classes para representar cartas, baralhos e jogadores.
+
+15. **Sistema de Cadastro de Veículos**:
+    - Construa um sistema de cadastro de veículos para uma frota, utilizando herança para criar classes de veículos especializados (carro, caminhão, moto).
+
+16. **Sistema de Reserva de Passagens Aéreas**:
+    - Desenvolva um sistema de reserva de passagens aéreas, com classes para representar voos, passageiros e reservas, incluindo funcionalidades de check-in.
+
+17. **Simulador de Mercado Financeiro**:
+    - Crie um simulador de mercado financeiro onde os usuários podem comprar e vender ações, com classes para ações, contas e transações.
+
+18. **Sistema de Gestão de Consultório Médico**:
+    - Implemente um sistema de gestão de pacientes para um consultório médico, com classes para médicos, pacientes, consultas e prontuários.
+
+19. **Aplicativo de Lista de Tarefas com Prioridades**:
+    - Construa uma aplicação para gerenciar tarefas com diferentes níveis de prioridade, utilizando classes para tarefas e listas de tarefas.
+
+20. **Sistema de Gestão de Aluguel de Carros**:
+    - Desenvolva um sistema para gerenciar a locação de veículos, com classes para clientes, veículos e contratos de locação.
+
+21. **Sistema de Gestão de Projetos**:
+    - Implemente um sistema para gerenciar projetos, com classes para tarefas, marcos e equipes, incluindo funcionalidades para acompanhar o progresso do projeto.
+
+22. **Simulador de Zoo**:
+    - Crie um simulador de zoológico com classes para diferentes tipos de animais, habitats e tratadores, incluindo funcionalidades para alimentação e cuidados.
+
+23. **Sistema de Controle de Ordem de Serviço**:
+    - Desenvolva um sistema para gerenciar ordens de serviço em uma oficina mecânica, com classes para serviços, veículos e clientes.
+
+24. **Aplicativo de Treinamento Físico Personalizado**:
+    - Implemente um aplicativo para gerenciar rotinas de treino personalizadas, utilizando classes para representar exercícios, treinos e perfis de usuários.
+
+25. **Sistema de Gerenciamento de Restaurante**:
+    - Construa um sistema de gerenciamento para um restaurante, com classes para mesas, pedidos, cardápios e contas, incluindo funcionalidades de reservas e faturamento.
+
+Esses projetos envolvem conceitos importantes da programação orientada a objetos e ajudam a consolidar o entendimento sobre como modelar problemas reais com classes e objetos, além de fornecer uma boa base para projetos mais complexos no futuro.
