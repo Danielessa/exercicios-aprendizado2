@@ -39,7 +39,7 @@ class Pecas:
         ]
         
         x_inicial, y_inicial = posicao
-        posicoes_validas = []
+        cls.movimentos = []
 
         # Calcula as novas posições
         for movimento in movimentos_possiveis:
@@ -47,19 +47,112 @@ class Pecas:
             y_novo = y_inicial + movimento[1]
 
             # Verifica se a nova posição está dentro dos limites do tabuleiro de xadrez
-            if 1 <= x_novo <= 8 and 1 <= y_novo <= 8:
-                posicoes_validas.append((x_novo, y_novo))
+            if 0 <= x_novo <= 7 and 0 <= y_novo <= 7:
+                cls.movimentos.append((x_novo, y_novo))
 
-        return posicoes_validas
+        return cls.movimentos
 
+    @classmethod
     def bispo(cls, posicao):
-        pass
+        cls.movimentos = []
+        x_inicial, y_inicial = posicao
+        y_inverso = 7 - y_inicial
+        
+        if x_inicial >= y_inicial:
+            x_referencia, y_referencia = x_inicial - y_inicial, 0
+            cls.movimentos.append((x_referencia, y_referencia))
+
+        else:
+            x_referencia, y_referencia = 0, y_inicial - x_inicial
+            cls.movimentos.append((x_referencia, y_referencia)) 
+        
+        
+        if x_inicial >= y_inverso:
+            x_referencia_inversa, y_referencia_inversa = x_inicial - y_inverso, 0
+            y_referencia_inversa = 7 - y_referencia_inversa
+
+
+            cls.movimentos.append((x_referencia_inversa, y_referencia_inversa))
+
+        else:
+            x_referencia_inversa, y_referencia_inversa = 0, y_inverso - x_inicial
+            y_referencia_inversa = 7 - y_referencia_inversa
+
+            cls.movimentos.append((x_referencia_inversa, y_referencia_inversa)) 
+        
+        
+        
+        for cont in range(8):
+                x_referencia += 1
+                y_referencia += 1
+                x_referencia_inversa += 1
+                y_referencia_inversa -= 1
+                if 0 <= x_referencia <= 7 and 0 <= y_referencia <= 7 and (x_referencia != x_inicial or y_referencia != y_inicial):
+                    cls.movimentos.append((x_referencia, y_referencia))
+                
+                if 0 <= x_referencia_inversa <= 7 and 0 <= y_referencia_inversa <= 7 and (x_referencia_inversa != x_inicial or y_referencia_inversa != y_inicial):
+                    cls.movimentos.append((x_referencia_inversa, y_referencia_inversa))
+                
+        return cls.movimentos
+
 
     def rei(cls, posicao):
-        pass
+        movimentos = [(-1, -1), (-1, 0) , (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1,1)]
 
+        for c in range(3):
+            
+        
+
+    @classmethod
     def rainha(cls, posicao):
-        pass
+        cls.movimentos = []
+
+        for linha in range(8):
+            if linha != posicao[0]:
+                cls.movimentos.append((linha, posicao[1]))
+
+        for coluna in range(8):
+            if coluna != posicao[1]:
+                cls.movimentos.append((posicao[0], coluna))
+
+        x_inicial, y_inicial = posicao
+        y_inverso = 7 - y_inicial
+        
+        if x_inicial >= y_inicial:
+            x_referencia, y_referencia = x_inicial - y_inicial, 0
+            cls.movimentos.append((x_referencia, y_referencia))
+
+        else:
+            x_referencia, y_referencia = 0, y_inicial - x_inicial
+            cls.movimentos.append((x_referencia, y_referencia)) 
+        
+        
+        if x_inicial >= y_inverso:
+            x_referencia_inversa, y_referencia_inversa = x_inicial - y_inverso, 0
+            y_referencia_inversa = 7 - y_referencia_inversa
+
+
+            cls.movimentos.append((x_referencia_inversa, y_referencia_inversa))
+
+        else:
+            x_referencia_inversa, y_referencia_inversa = 0, y_inverso - x_inicial
+            y_referencia_inversa = 7 - y_referencia_inversa
+            cls.movimentos.append((x_referencia_inversa, y_referencia_inversa)) 
+        
+        
+        
+        for cont in range(8):
+                x_referencia += 1
+                y_referencia += 1
+                x_referencia_inversa += 1
+                y_referencia_inversa -= 1
+                if 0 <= x_referencia <= 7 and 0 <= y_referencia <= 7 and (x_referencia != x_inicial or y_referencia != y_inicial):
+                    cls.movimentos.append((x_referencia, y_referencia))
+                
+                if 0 <= x_referencia_inversa <= 7 and 0 <= y_referencia_inversa <= 7 and (x_referencia_inversa != x_inicial or y_referencia_inversa != y_inicial):
+                    cls.movimentos.append((x_referencia_inversa, y_referencia_inversa))
+                
+        return cls.movimentos
 
     def movimento_valido(cls, tabuleiro):
         '''
@@ -68,7 +161,7 @@ class Pecas:
         pass
 
 
-movimentos = Pecas.torre((0,0))
+movimentos = Pecas.rainha((5,2))
 
 print(movimentos)
 
